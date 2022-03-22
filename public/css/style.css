@@ -618,6 +618,7 @@ a.btn-spacia{
 
 .home-content{
     position: relative;
+    height: 100%;
 }
 .home-text{
     display: table-cell;

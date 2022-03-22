@@ -264,23 +264,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                     <!-- Comment Item -->
                                     <li class="media comment-item">
                                         
-                                        <a class="pull-left" href="#"><img class="media-object comment-avatar" src="../images/user-avatar.png" alt=""></a>
-                                        
-                                        <div class="media-body">
-                                            
-                                            <div class="comment-item-data">
-                                                <div class="comment-author">
-                                                    <a href="#">John Doe</a>
-                                                </div>
-                                                Feb 9, 2020, at 10:3<span class="separator">&mdash;</span>
-                                                <a href="#"><i class="fa fa-comment"></i> Reply</a>
-                                            </div>
-                                            
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at magna ut ante eleifend eleifend.
-                                            </p>
-                                            
-                                        </div>
+                                        <div id="comments-container"></div>
                                         
                                     </li>
                                     <!-- End Comment Item -->
@@ -297,34 +281,33 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                 <h4 class="blog-page-title uppercase">Leave a comment</h4>
                                 
                                 <!-- Form -->
-                                <form method="post" action="" id="form" class="form">
-                                    
-                                    <!-- Name -->
-                                    <div class="form-group" style="max-width: 300px;">
-                                        <input type="text" name="name" id="name" class="form-control" placeholder="Name *" minlength="3" maxlength="100" required aria-required="true">
-                                    </div>
-                                    
-                                    <!-- Email -->
-                                    <div class="form-group" style="max-width: 300px;">
-                                        <input type="email" name="email" id="email" class="form-control" placeholder="Email *" minlength="5" maxlength="100" required aria-required="true">
-                                    </div>
-                                    
-                                    <!-- Comment -->
-                                    <div class="form-group" style="max-width: 450px;">
-                                        <textarea name="text" id="text" class="form-control" rows="6" placeholder="Comment" minlength="3" maxlength="400"></textarea>
-                                    </div>
-                                    
-                                    <!-- Send Button -->
-                                    <button type="submit" class="btn btn-spacia btn-medium">
-                                        Send comment
-                                    </button>
-                                    
+                                <h3>Leave a comment</h3>
+
+                                <form id="comment">
+                                    <label for="message">Message</label>
+                                    <textarea id="message"></textarea>
+
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name">
+
+                                    <label for="email">Email</label>
+                                    <input type="text" id="email">
+
+                                    <input type="submit" value="Post Comment">
                                 </form>
                                 <!-- End Form -->
                                     
                             </div>
                             <!-- End Add Comment -->
                             
+                            <hr>
+
+                            
+
+                            
+                            
+
+
                             <!-- Prev/Next Post -->
                                 <div class="blog-item-foot clearfix">
                                     <a href="#" class="blog-item-more left"><i class="fa fa-angle-left"></i> Previous post</a>
